@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.main-container {
+  margin: 20px auto;
+  display: flex;
+  max-width: 800px;
+}
+
+.column {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.col-1 {
+  background: hsl(31, 77%, 52%);
+}
+
+.col-2 {
+  background: hsl(184, 100%, 22%);
+}
+
+.col-3 {
+  background: hsl(179, 100%, 13%);
+}
+
+img {
+  height: 35px;
+  width: 50px;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  background: white;
+  height: 40px;
+  width: 140px;
+  border-radius: 20px;
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 800px) {
+  .main-container {
+    flex-direction: column;
+    max-width: 300px;
+  }
+}
