@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  margin-top: 5px;
+}
+
+.review-container {
+  background: linear-gradient(
+    179deg,
+    hsl(218, 17%, 18%) 0%,
+    hsl(213, 20%, 18%) 80%
+  );
+  width: 350px;
+  height: 300px;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.star {
+  height: 30px;
+  background-color: hsla(216, 12%, 54%, 0.2);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 16px auto;
+}
+
+li {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+  background-color: hsla(216, 12%, 54%, 0.2);
+  border: none;
+  display: inline-block;
+  margin: 0 4px;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+}
+
+.rating-btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.active,
+li:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.submit-btn {
+  height: 40px;
+  width: 300px;
+  border-radius: 20px;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  display: block;
+  margin: 0 auto;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.submit-btn:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+.submit-container {
+  background: linear-gradient(
+    179deg,
+    hsl(218, 17%, 18%) 0%,
+    hsl(213, 20%, 18%) 80%
+  );
+  width: 350px;
+  height: 300px;
+  border-radius: 25px;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.thanks-img {
+  height: 80px;
+}
+
+.thanks-text {
+  text-align: center;
+}
+
+.rating-banner {
+  background-color: hsla(216, 12%, 54%, 0.2);
+  width: 200px;
+  text-align: center;
+  padding: 6px;
+  border-radius: 20px;
+}
+
+.banner-text {
+  color: hsl(25, 97%, 53%);
+}
