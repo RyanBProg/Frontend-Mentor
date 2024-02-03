@@ -1,0 +1,307 @@
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+    --sw-1: 830px;
+    --sw-2: 950px;
+    --gutter: 20px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Epilogue", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 var(--gutter);
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.65;
+}
+
+/* Nav */
+
+.nav-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-list {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-item img {
+    margin-left: 5px;
+}
+
+.nav-item > img:hover {
+    transform: rotate(180deg);
+}
+
+/* Nav Buttons */
+
+.login-btn {
+    border: none;
+}
+
+.login-btn-desktop {
+    margin-right: 20px;
+}
+
+.register-btn {
+    border: 1px solid var(--almost-black);
+}
+
+.nav-btn {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--almost-white);
+}
+
+.nav-btn-desktop {
+    width: 90px;
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    opacity: 0.65;
+}
+
+/* Desktop nav dropdowns */
+
+.desktop-dropdown-menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--almost-white);
+    border-radius: 10px;
+    padding: 25px;
+    gap: 20px;
+}
+
+.desktop-features-dropdown {
+    top: 50px;
+    left: 80px;
+}
+
+.desktop-company-dropdown {
+    top: 50px;
+    left: 250px;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    opacity: 0.65;
+}
+
+/* Mobile nav */
+
+.mobile-menu-icon {
+    display: none;
+    margin-right: var(--gutter);
+    z-index: 99;
+}
+
+.mobile-nav-container {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100dvh;
+    background-color: var(--almost-white);
+    width: 250px;
+    padding: 0 25px;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    gap: 15px;
+    margin-top: 70px;
+}
+
+.nav-btn-mobile {
+    margin: 5px 0;
+}
+
+@media (max-width: 830px) {
+    .mobile-menu-icon {
+        display: block;
+        margin-right: var(--gutter);
+    }
+}
+
+/* Mobile nav dropdowns */
+
+.mobile-dropdown-menu {
+    display: none;
+    flex-direction: column;
+    margin: 20px 20px;
+    gap: 20px;
+}
+
+/* Hero */
+
+.hero-container {
+    margin: 50px auto 0;
+    padding: 0 var(--gutter);
+    display: grid;
+    grid-template-columns: 1fr 337px;
+    grid-template-rows: 200px 110px 110px 30px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 1000px;
+}
+
+.div-heading {
+    grid-area: 1/1/2/2;
+    font-size: 38px;
+}
+
+.div-p {
+    grid-area: 2/1/3/2;
+}
+
+.div-p > p {
+    max-width: 40ch;
+    color: var(--almost-black);
+}
+
+.div-btn {
+    grid-area: 3/1/4/2;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.65;
+}
+
+.div-btn > button {
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+
+.div-logos {
+    grid-area: 4/1/5/2;
+    display: flex;
+    height: 30px;
+    gap: 30px;
+}
+
+.grid-img {
+    grid-area: 1/2/4/2;
+    content: url(images/image-hero-desktop.png);
+    height: 450px;
+    display: block;
+}
+
+@media (max-width: 950px) {
+    h1 {
+        font-size: 4.2rem;
+    }
+
+    .div-logos {
+        height: 25px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 830px) {
+    .hero-container {
+        margin: 0 auto;
+        grid-template-columns: 400px;
+        grid-template-rows: 300px 100px 60px 60px 30px;
+        grid-row-gap: 25px;
+        text-align: center;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .grid-img {
+        content: url(images/image-hero-mobile.png);
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .user-controls {
+        display: none;
+    }
+
+    .div-heading {
+        grid-area: 2/1/3/1;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .div-p {
+        grid-area: 3/1/4/1;
+    }
+
+    .div-btn {
+        grid-area: 4/1/5/1;
+        margin: 0 auto;
+    }
+
+    .div-logos {
+        grid-area: 5/1/5/1;
+        height: 20px;
+        gap: 10px;
+    }
+
+    .grid-img {
+        grid-area: 1/1/2/1;
+        height: 300px;
+        margin: 0 auto;
+    }
+}

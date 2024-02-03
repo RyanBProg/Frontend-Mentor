@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="scripts.js" defer></script>
+        <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    </head>
+    <body>
+        <header>
+            <div class="nav-container">
+                <img class="logo-img" src="images/logo.svg" alt="snap logo" />
+                <nav class="desktop-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item nav-features">
+                            <a href="#">Features</a>
+                            <img
+                                class="features-menu-arrow"
+                                src="images/icon-arrow-down.svg"
+                                alt="arrow down" />
+                            <div
+                                class="desktop-features-dropdown desktop-dropdown-menu">
+                                <div class="dropdown-item">
+                                    <img src="images/icon-todo.svg" alt="" />
+                                    <a href="#">Todo List</a>
+                                </div>
+                                <div class="dropdown-item">
+                                    <img
+                                        src="images/icon-calendar.svg"
+                                        alt="" />
+                                    <a href="#">Calendar</a>
+                                </div>
+                                <div class="dropdown-item">
+                                    <img
+                                        src="images/icon-reminders.svg"
+                                        alt="" />
+                                    <a href="#">Reminders</a>
+                                </div>
+                                <div class="dropdown-item">
+                                    <img
+                                        src="images/icon-planning.svg"
+                                        alt="" />
+                                    <a href="#">Planning</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-company">
+                            <a href="#">Company</a>
+                            <img
+                                class="company-menu-arrow"
+                                src="images/icon-arrow-down.svg"
+                                alt="arrow down" />
+                            <div
+                                class="desktop-company-dropdown desktop-dropdown-menu">
+                                <a href="#">History</a>
+                                <a href="#">Our Team</a>
+                                <a href="#">Blog</a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-careers">
+                            <a href="#">Careers</a>
+                        </li>
+                        <li class="nav-item nav-about">
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="user-controls">
+                <button
+                    class="nav-btn nav-btn-desktop login-btn login-btn-desktop">
+                    Login
+                </button>
+                <button class="nav-btn nav-btn-desktop register-btn">
+                    Register
+                </button>
+            </div>
+            <div class="mobile-menu-icon">
+                <img id="mobile-menu-icon" src="images/icon-menu.svg" alt="" />
+            </div>
+            <div id="mobile-menu" class="mobile-nav-container">
+                <ul class="mobile-nav-list">
+                    <li class="nav-item nav-features">
+                        <a href="#">Features</a>
+                        <img
+                            class="features-menu-arrow-mobile"
+                            src="images/icon-arrow-down.svg"
+                            alt="arrow down" />
+                        <div
+                            class="mobile-dropdown-menu features-dropdown-mobile">
+                            <div class="dropdown-item">
+                                <img src="images/icon-todo.svg" alt="" />
+                                <a href="#">Todo List</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <img src="images/icon-calendar.svg" alt="" />
+                                <a href="#">Calendar</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <img src="images/icon-reminders.svg" alt="" />
+                                <a href="#">Reminders</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <img src="images/icon-planning.svg" alt="" />
+                                <a href="#">Planning</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-company">
+                        <a href="#">Company</a>
+                        <img
+                            class="company-menu-arrow-mobile"
+                            src="images/icon-arrow-down.svg"
+                            alt="arrow down" />
+                        <div
+                            class="mobile-dropdown-menu company-dropdown-mobile">
+                            <a href="#">History</a>
+                            <a href="#">Our Team</a>
+                            <a href="#">Blog</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-careers">
+                        <a href="#">Careers</a>
+                    </li>
+                    <li class="nav-item nav-about">
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+                <button class="nav-btn nav-btn-mobile login-btn">Login</button>
+                <button class="nav-btn nav-btn-mobile register-btn">
+                    Register
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="hero-container">
+                <div class="div-heading">
+                    <h1>
+                        Make <br />
+                        remote work
+                    </h1>
+                </div>
+                <div class="div-p">
+                    <p>
+                        Get your team in sync, no matter your location.
+                        Streamline processes, create team rituals, and watch
+                        productivity soar.
+                    </p>
+                </div>
+                <div class="div-btn">
+                    <button class="btn learn-btn">Learn more</button>
+                </div>
+                <div class="div-logos">
+                    <img src="images/client-databiz.svg" alt="databiz logo" />
+                    <img
+                        src="images/client-audiophile.svg"
+                        alt="audiophile logo" />
+                    <img src="images/client-meet.svg" alt="meet logo" />
+                    <img src="images/client-maker.svg" alt="maker logo" />
+                </div>
+                <img class="grid-img" alt="hero image" />
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,239 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    height: 100dvh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    min-height: 100dvh;
+}
+
+.background-img-cont {
+    background-image: url(images/bg-main-desktop.png);
+}
+
+/* card front */
+
+.card-front-cont {
+    background-image: url(images/bg-card-front.png);
+    padding: 25px;
+    width: 447px;
+    height: 245px;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    color: var(--white);
+    transform: scale(0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-front-decoration-cont {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-front-circle-fill {
+    background-color: var(--white);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.card-front-circle {
+    border: 1px solid var(--white);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.card-front-number {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.card-front-name-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-front-name {
+}
+
+.card-front-date {
+}
+
+/* card back img */
+
+.card-back-img {
+    background-image: url(images/bg-card-back.png);
+    position: absolute;
+    width: 447px;
+    height: 245px;
+    top: 200px;
+    left: 90px;
+    transform: scale(0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+/* card form */
+
+.card-form {
+    margin: 100px auto;
+    width: 300px;
+}
+
+.form-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-card-name-cont {
+}
+
+.form-input-label {
+    font-size: 14px;
+}
+
+.form-input {
+    display: block;
+    border: 1px solid var(--dark-grayish-violet);
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    font-family: inherit;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 1px solid var(--light-grayish-violet);
+}
+
+.form-input-error {
+    color: red;
+    font-size: 10px;
+    display: none;
+}
+
+.form-card-date-cont {
+    display: grid;
+    grid-template-columns: 25% 25% 1fr;
+    grid-template-rows: 20px 1fr 20px;
+    gap: 5px;
+}
+
+.form-date-input-label {
+    grid-column: span 2;
+}
+
+.form-date-input-month {
+    grid-row: 2 / 2;
+    grid-column: 0 / 1;
+}
+
+.form-date-input-year {
+    grid-row: 2 / 2;
+    grid-column: 1 / 2;
+}
+
+.form-input-cvc-label {
+    margin-left: 5px;
+}
+
+.form-input-cvc {
+    margin-left: 5px;
+    width: calc(100% - 5px);
+}
+
+.form-date-error {
+}
+
+.form-cvc-error {
+    grid-column: 3 / 4;
+    margin-left: 5px;
+}
+
+.form-submit-btn {
+    width: 100%;
+    padding: 8px 0;
+    color: var(--white);
+    background-color: var(--very-dark-violet);
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.form-submit-btn:hover,
+.form-submit-btn:focus {
+    background-color: var(--dark-grayish-violet);
+}
+
+.form-confirmation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {
+    main {
+        grid-template-columns: 270px 1fr;
+    }
+
+    .card-front-cont {
+        left: -40px;
+    }
+
+    .card-back-img {
+        position: absolute;
+        left: -10px;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
+    }
+
+    .background-img-cont {
+        background-image: url(images/bg-main-mobile.png);
+    }
+
+    .card-front-cont {
+        z-index: 99;
+        transform: scale(0.7);
+        top: -250px;
+        left: -130px;
+    }
+
+    .card-back-img {
+        transform: scale(0.7);
+        top: -300px;
+        left: -30px;
+    }
+
+    .card-form {
+        position: relative;
+    }
+}

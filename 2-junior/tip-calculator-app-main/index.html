@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=\, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="shortcut icon"
+            href="images/favicon-32x32.png"
+            type="image/x-icon" />
+        <title>Tip Calculator</title>
+    </head>
+    <body>
+        <main>
+            <h1 class="main-title">SPLITTER</h1>
+            <form
+                id="form"
+                class="form-cont"
+                onkeydown="return event.key != 'Enter';">
+                <div class="calc-cont">
+                    <div class="input-cont">
+                        <label for="bill-input" class="input-heading-text"
+                            >Bill</label
+                        >
+                        <img
+                            class="input-icon"
+                            src="images/icon-dollar.svg"
+                            alt="" />
+                        <input
+                            id="bill-input"
+                            type="number"
+                            value="1"
+                            step="0.01"
+                            min="0.01"
+                            class="form-input" />
+                    </div>
+                    <div class="percent-cont">
+                        <p class="input-heading-text">Select Tip %</p>
+                        <div id="percent-cont-btns" class="percent-cont-btns">
+                            <button
+                                type="submit"
+                                value="0.05"
+                                class="btn calc-btn active-btn">
+                                5%
+                            </button>
+                            <button
+                                type="submit"
+                                value="0.075"
+                                class="btn calc-btn">
+                                7.5%
+                            </button>
+                            <button
+                                type="submit"
+                                value="0.1"
+                                class="btn calc-btn">
+                                10%
+                            </button>
+                            <button
+                                type="submit"
+                                value="0.125"
+                                class="btn calc-btn">
+                                12.5%
+                            </button>
+                            <button
+                                type="submit"
+                                value="0.15"
+                                class="btn calc-btn">
+                                15%
+                            </button>
+                            <button
+                                type="submit"
+                                value="0.2"
+                                class="btn calc-btn">
+                                20%
+                            </button>
+                        </div>
+                    </div>
+                    <div class="input-cont">
+                        <label for="people-input" class="input-heading-text"
+                            >Number of People</label
+                        >
+                        <img
+                            class="input-icon"
+                            src="images/icon-person.svg"
+                            alt="" />
+                        <input
+                            id="people-input"
+                            type="number"
+                            value="1"
+                            step="1"
+                            min="1"
+                            class="form-input" />
+                    </div>
+                </div>
+                <div class="results-cont">
+                    <div class="tip-amount-cont">
+                        <h2 class="results-cont-heading">Tip Amount</h2>
+                        <p class="results-cont-sub-heading">/ person</p>
+                        <p id="pp-tip-amount" class="results-cont-result">
+                            $ 0.00
+                        </p>
+                    </div>
+                    <div class="total-cont">
+                        <h2 class="results-cont-heading">Total</h2>
+                        <p class="results-cont-sub-heading">/ person</p>
+                        <p id="pp-total" class="results-cont-result">$ 0.00</p>
+                    </div>
+                    <button
+                        type="reset"
+                        id="reset-btn"
+                        class="btn results-reset-btn">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </main>
+        <script src="scripts.js"></script>
+    </body>
+</html>
