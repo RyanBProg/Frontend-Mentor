@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin="" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="shortcut icon"
+            href="images/favicon-32x32.png"
+            type="image/x-icon" />
+        <title>IP Address Tracker</title>
+    </head>
+    <body>
+        <main>
+            <form action="#" id="form">
+                <h1>IP Address Tracker</h1>
+                <div class="input-cont">
+                    <input
+                        type="text"
+                        id="search-input"
+                        placeholder="Search for any IP address" />
+                    <button type="submit" class="submit-btn">
+                        <img
+                            src="images/icon-arrow.svg"
+                            alt=""
+                            class="submit-btn-img" />
+                    </button>
+                </div>
+                <div class="dashboard-cont">
+                    <div class="dashboard-sub-cont ip-cont">
+                        <h2 class="dashboard-title">IP ADDRESS</h2>
+                        <p class="dashboard-text" id="ip"></p>
+                    </div>
+
+                    <div class="dashboard-sub-cont">
+                        <h2 class="dashboard-title">LOCATION</h2>
+                        <p class="dashboard-text" id="location"></p>
+                    </div>
+
+                    <div class="dashboard-sub-cont">
+                        <h2 class="dashboard-title">TIMEZONE</h2>
+                        <p class="dashboard-text" id="timezone"></p>
+                    </div>
+
+                    <div class="dashboard-sub-cont isp-cont">
+                        <h2 class="dashboard-title">ISP</h2>
+                        <p class="dashboard-text" id="isp"></p>
+                    </div>
+                </div>
+            </form>
+            <div class="map-cont">
+                <div id="map"></div>
+            </div>
+        </main>
+        <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
