@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon" />
+    <title>Sunny Side Landing Page</title>
+  </head>
+  <body class="font-barlow font-semibold">
+    <header
+      class="flex justify-between items-center bg-transparent px-5 my-5 absolute w-full">
+      <img src="images/logo.svg" alt="" />
+      <nav>
+        <ul class="sm:flex gap-8 items-center text-sm hidden">
+          <li class="text-white">About</li>
+          <li class="text-white">Services</li>
+          <li class="text-white">Projects</li>
+          <li>
+            <button
+              class="bg-white rounded-full py-2 px-5 font-fraunces text-sm">
+              Contact
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="sm:hidden relative">
+        <img src="images/icon-hamburger.svg" alt="" id="mobile-menu-icon" />
+        <ul
+          id="mobile-menu"
+          class="absolute w-80 bg-white right-0 top-10 hidden flex-col items-center gap-8 p-8">
+          <li class="text-gray-600">About</li>
+          <li class="text-gray-600">Services</li>
+          <li class="text-gray-600">Projects</li>
+          <li>
+            <button
+              class="bg-yellow-400 text-black rounded-full py-3 px-6 font-fraunces text-sm">
+              Contact
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="">
+      <section class="bg-header-img bg-cover bg-center py-2">
+        <h1
+          class="font-fraunces text-3xl sm:text-5xl text-white text-center mt-28 mb-16">
+          WE ARE CREATIVES
+        </h1>
+        <img
+          src="images/icon-arrow-down.svg"
+          alt=""
+          class="mx-auto h-14 mb-48 lg:mb-64 lg:h-24" />
+      </section>
+      <section
+        class="grid sm:grid-cols-2 sm:grid-rows-2 grid-cols-1 grid-rows-4">
+        <div class="sm:col-start-2">
+          <img src="images/desktop/image-transform.jpg" alt="" />
+        </div>
+        <div
+          class="flex flex-col justify-center gap-6 mx-auto my-5 px-5 max-w-96 sm:row-start-1">
+          <h2 class="font-fraunces text-3xl">Transform your brand</h2>
+          <p class="text-gray-600 text-sm">
+            We are a full-service creative agency specializina in nelping Dranas
+            grow last. Chgage your chents througn compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <div
+            class="font-fraunces relative flex flex-col justify-start items-center max-w-max text-sm font-bold">
+            <p class="z-10">LEARN MORE</p>
+            <hr
+              class="absolute top-3 w-28 h-2 my-0 bg-yellow-200 border-0 z-0" />
+          </div>
+        </div>
+        <div>
+          <img src="images/desktop/image-stand-out.jpg" alt="" />
+        </div>
+        <div
+          class="flex flex-col justify-center gap-6 mx-auto my-5 px-5 max-w-96">
+          <h2 class="font-fraunces text-3xl">
+            Stand out to the right audience
+          </h2>
+          <p class="text-gray-600 text-sm">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we'll build and
+            extend your brand in digital places.
+          </p>
+          <div
+            class="font-fraunces relative flex flex-col justify-start items-center max-w-max text-sm font-bold">
+            <p class="z-10">LEARN MORE</p>
+            <hr class="absolute top-3 w-28 h-2 my-0 bg-gray-200 border-0 z-0" />
+          </div>
+        </div>
+      </section>
+      <section class="grid grid-cols-1 sm:grid-cols-2">
+        <div
+          class="bg-graphic-design-img bg-center bg-cover flex flex-col justify-center items-center gap-6">
+          <h2 class="font-fraunces mt-64 text-xl opacity-65">Graphic Design</h2>
+          <p class="text-sm max-w-72 text-center opacity-65 mb-10">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients'
+            attention.
+          </p>
+        </div>
+        <div
+          class="bg-photography-img bg-center bg-cover text-gray-800 flex flex-col justify-center items-center gap-6">
+          <h2 class="font-fraunces mt-64 text-xl opacity-65">Photography</h2>
+          <p class="text-sm max-w-72 text-center opacity-65 mb-10">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </section>
+      <section class="my-20 px-6">
+        <h2 class="font-fraunces text-xl text-gray-400 mx-auto mb-16 max-w-max">
+          CLIENT TESIMONTIALS
+        </h2>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-16 sm:gap-6">
+          <div class="flex flex-col items-center max-w-64">
+            <img
+              src="images/image-emily.jpg"
+              alt=""
+              class="rounded-full h-16 mb-8" />
+            <p class="text-gray-600 text-sm text-center h-24 sm:h-32">
+              We out our trust in Sunnvside and they delivered making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <p class="font-fraunces mb-2">Emily R.</p>
+            <p class="text-gray-600 text-sm">Marketing Director</p>
+          </div>
+          <div class="flex flex-col items-center max-w-64">
+            <img
+              src="images/image-thomas.jpg"
+              alt=""
+              class="rounded-full h-16 mb-8" />
+            <p class="text-gray-600 text-sm text-center h-24 sm:h-32">
+              Sunnside's enthusiasm coupled with their I keen interest in our
+              brand's success made it a satistying and enjoyable experience.
+            </p>
+            <p class="font-fraunces mb-2">Thomas S.</p>
+            <p class="text-gray-600 text-sm">Chief Operating Officer</p>
+          </div>
+          <div class="flex flex-col items-center max-w-64">
+            <img
+              src="images/image-jennie.jpg"
+              alt=""
+              class="rounded-full h-16 mb-8" />
+            <p class="text-gray-600 text-sm text-center h-24 sm:h-32">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <p class="font-fraunces mb-2">Jennie F.</p>
+            <p class="text-gray-600 text-sm">Business Owner</p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="grid grid-cols-2 grid-rows-2 sm:grid-cols-4 sm:grid-rows-1">
+        <img
+          src="images/desktop/image-gallery-milkbottles.jpg"
+          alt=""
+          class="object-cover w-full max-h-full" />
+        <img
+          src="images/desktop/image-gallery-orange.jpg"
+          alt=""
+          class="object-cover w-full max-h-full" />
+        <img
+          src="images/desktop/image-gallery-cone.jpg"
+          alt=""
+          class="object-cover w-full max-h-full" />
+        <img
+          src="images/desktop/image-gallery-sugarcubes.jpg"
+          alt=""
+          class="object-cover w-full max-h-full" />
+      </section>
+    </main>
+    <footer class="bg-teal-400 py-8">
+      <img src="images/logo.svg" alt="" class="mx-auto" />
+      <ul class="flex gap-6 text-teal-700 mx-auto max-w-max mt-6 mb-10 text-sm">
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+      </ul>
+      <div class="flex gap-4 mx-auto max-w-max">
+        <img src="images/icon-facebook.svg" alt="" />
+        <img src="images/icon-instagram.svg" alt="" />
+        <img src="images/icon-twitter.svg" alt="" />
+        <img src="images/icon-pinterest.svg" alt="" />
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
