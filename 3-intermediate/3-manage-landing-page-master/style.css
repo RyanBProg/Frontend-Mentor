@@ -1,0 +1,358 @@
+/* Variables */
+:root {
+    --clr-main: hsl(12, 88%, 59%);
+    --clr-sub: hsl(228, 39%, 23%);
+    --clr-text: hsl(227, 12%, 61%);
+    --clr-headings: hsl(233, 12%, 13%);
+    --clr-card: hsl(0, 0%, 98%);
+
+    --max-width: 1000px;
+    --gutter: 20px;
+    --center-gap: 50px;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h1,
+h2,
+h4 {
+    color: var(--clr-headings);
+    font-weight: 700;
+}
+
+p {
+    color: var(--clr-text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Buttons */
+
+.btn {
+    height: 35px;
+    width: 130px;
+    border: none;
+    border-radius: 17.5px;
+    font-size: 13px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn-orange {
+    background-color: var(--clr-main);
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: var(--clr-main);
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px var(--gutter);
+}
+
+.header-logo {
+    height: 25px;
+}
+
+.header-logo:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.main-nav-list {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.main-nav-item:hover {
+    opacity: 0.75;
+    color: var(--clr-main);
+}
+
+/* Hero */
+
+.hero-container {
+    margin: 80px auto;
+    padding: 0 var(--gutter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: var(--max-width);
+    height: 500px;
+    gap: var(--center-gap);
+}
+
+.hero-text-container,
+.hero-img-container {
+    flex: 0 1 50%;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Banner */
+
+.banner-container {
+    margin: 30px auto;
+    padding: 0 var(--gutter);
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: center;
+    gap: var(--center-gap);
+}
+
+.banner-inner-1,
+.banner-inner-2 {
+    flex: 0 1 50%;
+}
+
+.sub-heading {
+    margin-bottom: 20px;
+}
+
+.banner-inner-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.banner-number-balloon {
+    background-color: var(--clr-main);
+    color: white;
+    padding: 5px 15px;
+    margin-right: 20px;
+    font-weight: 400;
+    border-radius: 15px;
+}
+
+.banner-text {
+    padding-left: 68px;
+    margin-top: 10px;
+}
+
+/* Testimonials */
+
+.testimonial-container {
+    padding: 0 var(--gutter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    width: 400px;
+    background-color: var(--clr-card);
+    padding: 40px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.testimonial-card img {
+    height: 70px;
+    position: absolute;
+    top: -40px;
+    left: 160px;
+}
+
+/* CTA Banner */
+
+.cta-banner-background {
+    margin-top: 100px;
+    padding: 40px 0;
+    background-color: var(--clr-main);
+}
+
+.cta-banner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    padding: 0 var(--gutter);
+}
+
+.cta-heading {
+    color: white;
+    max-width: 20ch;
+}
+
+/* Media */
+
+@media (max-width: 50em) {
+    .hero-img-container {
+        display: none;
+    }
+
+    /* Nav */
+
+    .main-nav-list {
+        display: none;
+        flex-direction: column;
+        padding: 50px 100px;
+        position: absolute;
+        gap: 20px;
+        right: 10px;
+        top: 60px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 0 1000px 0 rgba(0, 0, 0, 1);
+    }
+
+    .main-nav-item {
+        text-align: center;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    /* Button */
+
+    .btn {
+        margin: 0 auto;
+    }
+
+    .btn-nav {
+        display: none;
+    }
+
+    /* Hero */
+
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-text-container {
+        text-align: center;
+    }
+
+    /* Banner */
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-inner-1 {
+        text-align: center;
+    }
+
+    .banner-heading-strip {
+        background-color: hsla(28, 96%, 82%, 0.513);
+        padding: 5px 10px;
+        margin: 0 -20px;
+    }
+
+    .banner-text {
+        padding-left: 0;
+    }
+
+    .cta-banner {
+        flex-direction: column;
+    }
+
+    .cta-heading {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
